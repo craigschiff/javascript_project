@@ -2,7 +2,8 @@ class SponsorView {
   static renderSponsor ($target, sponsor) {
     $target.text('')
     $target.append(`<p class="sponsor" id="${sponsor.name}">
-        Party: ${sponsor.party}<br><br>
+        Party: ${sponsor.party}<br>
+        District: ${sponsor.district}<br>
         </p>
         <h4>Sponsored Bills: </h4>
         `)

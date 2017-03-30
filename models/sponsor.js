@@ -1,5 +1,5 @@
 class Sponsor {
-  constructor (name, party) {
+  constructor (name, party, district) {
     this.name = name
     if (party === "D") {
       this.party = "Democrat"
@@ -8,6 +8,7 @@ class Sponsor {
     } else {
       this.party = "Unaffiliated"
     }
+    this.district = district
     this.bills = []
     Store.sponsors.push(this)
   }

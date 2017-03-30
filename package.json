@@ -79,7 +79,9 @@
     "ticketPattern": "^((Closes|Fixes) ([a-zA-Z]{2,}-)[0-9]+)|^(Refs? [^#])"
   },
   "dependencies": {
-    "bootstrap": "^3.3.7"
+    "babyparse": "^0.4.6",
+    "bootstrap": "^3.3.7",
+    "papaparse": "^4.2.0"
   },
   "description": "JavaScript library for DOM operations",
   "devDependencies": {

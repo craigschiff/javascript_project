@@ -9,7 +9,7 @@ let billPage = "&op=getBill&id="
     constructor (bill) {
       this.id = bill.id
       this.title = bill.title
-      this.description = bill.description
+      this.latest = bill.history[0].action
       debugger
       this.url = bill.url
       let category = Store.categories.find ((category) => {
@@ -33,7 +33,7 @@ let billPage = "&op=getBill&id="
           sponsor.bills.push(this)
           this.sponsors.push(sponsor)
         } else {
-          sponsor = new Sponsor(person.name, person.party)
+          sponsor = new Sponsor(person.name, person.party, person.district)
           sponsor.bills.push(this)
           this.sponsors.push(sponsor)
         }

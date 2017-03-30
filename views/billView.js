@@ -2,9 +2,9 @@ class BillView {
   static renderBill ($target, bill) {
     $target.text('')
     $target.append(`<p class="bill" id="${bill.title}">
-        Description: ${bill.description}<br>
         Category: ${bill.category.name}<br>
         Date: ${bill.date}<br>
+        Latest Update: ${bill.latest}<br>
         <a href="${bill.url}">Bill Website<a/>
         </p>
         `)

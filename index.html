@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>App!</title>
+  </head>
+  <body>
+    <script src="jquery-2.1.1.min.js"></script>
+     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     <script src="/models/bill.js"></script>
+     <script src="/store.js"></script>
+     <script src="/models/category.js"></script>
+     <script src="/models/sponsor.js"></script>
+     <script src="/controllers/categoriesListController.js"></script>
+     <script src="/controllers/categoryShowController.js"></script>
+     <script src="/controllers/billShowController.js"></script>
+     <script src="/controllers/sponsorShowController.js"></script>
+     <script src="/views/sponsorView.js"></script>
+     <script src="/views/billView.js"></script>
+     <script src="/views/categoryView.js"></script>
+     <script src="/views/categoriesView.js"></script>
+     <script src="/wrapper.js"></script>
+
+     <script src="/app.js"></script>
+     <div class="head">
+     <h2><img src="logos/edit.png" width="40" height="40" alt="NY times logo"> Track the New York State Government!</h2>
+     </div>
+     <br />
+      <div class="container">
+        <div class="row">
+          <aside class="col-xs-3 category-section">
+            <h4 class="categories"></h4>
+            <ul class="list-category">
+            </ul>
+          </aside>
+          <section class="col-xs-6 category-bills">
+            <h4 class="category"></h4>
+            <ul class="category-bill">
+            </ul>
+
+          </section>
+          <div class="sidebar">
+            <!-- <script> -->
+          <!-- //   (function() {
+          //     var cx = '007354554822759251861:kxpdzqr4rbq';
+          //     var gcse = document.createElement('script');
+          //     gcse.type = 'text/javascript';
+          //     gcse.async = true;
+          //     // gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+          //     // https://www.googleapis.com/customsearch/v1?key=AIzaSyDRMXOErSGwz1iBKmQwcj1GIFlQP8j1l5I&cx=007354554822759251861:kxpdzqr4rbq:omuauf_lfve&q=ny-senate-legislation
+          //     gcse.src = 'https://www.googleapis.com/customsearch/v1?key=AIzaSyDRMXOErSGwz1iBKmQwcj1GIFlQP8j1l5I&cx=007354554822759251861:kxpdzqr4rbq:omuauf_lfve&q=ny-senate-legislation';
+          //     var s = document.getElementsByTagName('script')[0];
+          //     s.parentNode.insertBefore(gcse, s);
+          //   })();
+          //   </script> -->
+          <!-- //   <gcse:searchresults-only></gcse:searchresults-only>
+          // </div> -->
+        <!-- <div class="sidebar">
+          <a class="twitter-timeline"  href="https://twitter.com/search?q=ny%20senate%20bill" data-widget-id="847428910903992323">Tweets about New York Senate</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div> -->
+        <div class="col-xs-3 sidebar">
+          <!-- <a class="twitter-timeline"  href="https://twitter.com/search?q=ny%20legislation%20senator" data-widget-id="847430558250434560">Tweets About NY Senate</a> -->
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          <a class="twitter-timeline" href="https://twitter.com/NYSenate">NYSenate Tweets</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+      </div>
+
+        <!-- <div class="sidebar">
+
+        <a class="twitter-timeline"  href="https://twitter.com/search?q=ny%20legislation%20senator" data-widget-id="847430558250434560">Tweets About NY Senate</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div> -->
+
+
+   </div>
+  </body>
+</html>

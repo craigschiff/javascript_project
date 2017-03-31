@@ -1,4 +1,3 @@
-
 const baseUrl = "https://api.legiscan.com/?key="
 const masterList = `${baseUrl}${apiKey}op=getMasterList&state=NY`
 let billPage = "&op=getBill&id="

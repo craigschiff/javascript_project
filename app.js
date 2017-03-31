@@ -15,17 +15,16 @@ $(function(){
 
 function makeBills () {
   let bills = Store.billUrls.slice(0, 6)
-  bills.forEach((url) => {
-    Api.callBill(url)
+  const billCalls = bills.map((url) => {
+    return Api.callBill(url)
     .then((billJson) => {
       new Bill(billJson.bill)
-      if (Store.bills.length === bills.length) {
-        callCategories()
-      }
+      })
     })
-  })
-  // setTimeout(callCategories, 1000)
-}
+    Promise.all(billCalls)
+    .then(callCategories)
+  }
+
 
 function callCategories() {
   let $targetHead = $('h4.categories')

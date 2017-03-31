@@ -1,4 +1,3 @@
-
 const baseUrl = "https://api.legiscan.com/?key="
 const masterList = `${baseUrl}${apiKey}op=getMasterList&state=NY`
 let billPage = "&op=getBill&id="
@@ -10,7 +9,6 @@ let billPage = "&op=getBill&id="
       this.id = bill.id
       this.title = bill.title
       this.latest = bill.history[0].action
-      debugger
       this.url = bill.url
       let category = Store.categories.find ((category) => {
         return category.name === bill.committee.name
